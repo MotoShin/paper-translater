@@ -1,0 +1,39 @@
+Abstract The abstract paragraph should be indented 1/2 inch (3 picas) on both the left- and right-hand margins.
+概要
+概要の段落は、左右のマージンの両方に1/2インチ（3ピカ）インデントする必要があります。
+
+Use 10 point type, with a vertical spacing (leading) of 11 points.
+10ポイントの文字を使用し、縦のスペース（リーディング）を11ポイントに設定してください。
+
+The word Abstract must be centered, bold, and in point size 12.
+「抽象」の文字は、中央揃えで太字で、フォントサイズ12で表示する必要があります。
+
+Two line spaces precede the abstract.
+要約の前には2行スペースがあります。
+
+The abstract must be limited to one paragraph.
+要約は1段落に制限されなければなりません。
+
+1 Submission of papers to NeurIPS 2020
+
+NeurIPS requires electronic submissions.
+1. NeurIPS 2020への論文提出
+
+NeurIPSは電子的な論文提出を必要としています。
+
+The electronic submission site is https://cmt3.research.microsoft.com/NeurIPS2020/
+
+Please read the instructions below carefully and follow them faithfully.
+電子提出サイトはhttps://cmt3.research.microsoft.com/NeurIPS2020/です。
+
+以下の指示を注意深く読んで、忠実に従ってください。
+
+1.1 Style Papers to be submitted to NeurIPS 2020 must be prepared according to the instructions presented here.
+1.1 NeurIPS 2020に提出するスタイルペーパーは、ここに示された指示に従って準備する必要があります。
+
+Papers may only be up to eight pages long, including ﬁgures.
+論文は、図を含めて最大8ページまでとする。
+
+Additional pages containing only a section on the broader impact, acknowledgments and/or cited
+引用文献のみを含むセクションのみを含む追加ページ。広範な影響に関するセクション、謝辞、または引用されたセクションのみを含みます。
+

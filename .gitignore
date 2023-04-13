@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# setting myself
+target_document/*
+!sample.pdf
+
+result/*
+!sample_result.txt
+
+result.txt
