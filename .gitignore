@@ -129,5 +129,10 @@ dmypy.json
 .pyre/
 
 # setting myself
-*.pdf
+target_document/*
+!sample.pdf
+
+result/*
+!sample_result.txt
+
 result.txt
