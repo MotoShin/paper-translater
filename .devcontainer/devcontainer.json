@@ -26,7 +26,7 @@
         }
     },
     // コンテナ作成後に実行してほしいコマンド
-    "postCreateCommand": "pip install --upgrade pip && pip install --user -r requirements.txt",
+    "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
     // vscodeをコンテナ内のどのユーザで実行したいか
     "remoteUser": "vscode"
 }
