@@ -2,10 +2,17 @@ from converter import Converter
 from reformatter import Formatter
 from translater import Translater
 from tqdm import tqdm
+import sys
 
 def main():
+    args = sys.argv
+    if (len(args[1]) == 0):
+        target_pdf_file = "sample.pdf"
+    else:
+        target_pdf_file = args[1]
+
     # 使用するクラスのインスタンス生成
-    converter = Converter(target_pdf_file="attention_is_all_you_need.pdf")
+    converter = Converter(target_pdf_file=target_pdf_file)
     formatter = Formatter()
     translater = Translater()
 
