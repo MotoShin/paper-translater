@@ -27,3 +27,8 @@ USER ${username}
 WORKDIR /home/${username}/paper-translater
 
 COPY . /home/${username}/paper-translater
+
+# install
+RUN pip install --upgrade pip \
+    && pip install --user -r requirements.txt \
+    && python -c "import nltk; nltk.download('punkt')"
