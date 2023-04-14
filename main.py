@@ -3,6 +3,7 @@ from reformatter import Formatter
 from translater import Translater
 from tqdm import tqdm
 import sys
+import time
 
 def main():
     args = sys.argv
@@ -29,6 +30,7 @@ def main():
     for sentence in tqdm(sentencies):
         jp_sentence = translater.translate(sentence)
         result += sentence + "\n" + jp_sentence + "\n\n"
+        time.sleep(25)
 
     # 結果をtxtファイルに出力
     with open('result/result.txt', 'w') as file:
