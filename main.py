@@ -7,7 +7,7 @@ import time
 
 def main():
     args = sys.argv
-    if (len(args[1]) == 0):
+    if (len(args) <= 1):
         target_pdf_file = "sample.pdf"
     else:
         target_pdf_file = args[1]
