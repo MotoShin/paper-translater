@@ -56,9 +56,10 @@ def main():
 
         time.sleep(25)
 
+    # 結果ファイルをコピーによって作成
     shutil.copyfile(PROCESSING_TRANSLATE_FILE, RESULT_FILE)
 
-    # 正常終了したらprocessing.txtを削除する
+    # 正常終了したらprocessing系のファイルを削除する
     if(os.path.isfile(PROCESSING_INDEX_FILE)):
         os.remove(PROCESSING_INDEX_FILE)
     if(os.path.isfile(PROCESSING_TRANSLATE_FILE)):
