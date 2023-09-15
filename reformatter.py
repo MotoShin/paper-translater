@@ -22,3 +22,25 @@ class Formatter():
 
     def sentence_split(self, text: str) -> list:
         return nltk.sent_tokenize(text)
+
+@dataclass
+class Formatter2():
+    def format(self, text: str):
+        # 改行で文字列分割
+        lines = text.split('\n')
+
+        chapters = []
+        chapter = ''
+        chapter_pattern = r'^\d\.(\d\.)*\s?[A-z]+'
+        for line in lines:
+            flag = re.search(chapter_pattern, line)
+            if flag:
+                chapters.append(chapter)
+                chapter = ''
+                flag = False
+            chapter += line + '\n'
+        chapters.append(chapter)
+
+        # for i, chapter in enumerate(chapters):
+        #     print("Chapter {}".format(i) + '\n' + chapter + '\n')
+        return chapters
