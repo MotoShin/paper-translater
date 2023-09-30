@@ -136,3 +136,4 @@ result/*
 !sample_result.txt
 
 result.txt
+.vscode/
