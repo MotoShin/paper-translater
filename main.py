@@ -1,6 +1,6 @@
-from converter import Converter
-from reformatter import Formatter
-from translater import Translater
+from converter import ConvertPDF2text
+from reformatter import Formatter2
+from translater import Translater2
 from tqdm import tqdm
 import sys
 import time
@@ -13,10 +13,10 @@ RESULT_FILE = 'result/result.txt'
 
 def main():
     args = sys.argv
-    if (len(args) <= 1):
-        target_pdf_file = "sample.pdf"
-    else:
-        target_pdf_file = args[1]
+
+    converter = ConvertPDF2text(args[1:])
+    formatter = Formatter2()
+    translater = Translater2()
 
     processing_index = 0
     # 前回の実行で失敗している箇所を取得
@@ -25,21 +25,11 @@ def main():
         processing_index = int(f.read())
         f.close()
 
-    # 使用するクラスのインスタンス生成
-    converter = Converter(target_pdf_file=target_pdf_file)
-    formatter = Formatter()
-    translater = Translater()
-
-    # pdfからテキスト情報を抽出
-    text = converter.convert()
-    converter.close()
-
-    # テキスト情報を精査して、文章単位で分割する
-    text_shaped = formatter.reformat(text)
-    sentencies = formatter.sentence_split(text_shaped)
+    text = converter.convert_pdf_to_text()
+    chapters = formatter.format(text)
 
     # chatGPTを使って和訳
-    for i, sentence in enumerate(tqdm(sentencies)):
+    for i, sentence in enumerate(tqdm(chapters)):
         if i < processing_index:
             continue
 
@@ -64,5 +54,7 @@ def main():
         os.remove(PROCESSING_INDEX_FILE)
     if(os.path.isfile(PROCESSING_TRANSLATE_FILE)):
         os.remove(PROCESSING_TRANSLATE_FILE)
+
+
 
 main()
