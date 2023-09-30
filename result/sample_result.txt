@@ -1,39 +1,388 @@
-Abstract The abstract paragraph should be indented 1/2 inch (3 picas) on both the left- and right-hand margins.
-概要
-概要の段落は、左右のマージンの両方に1/2インチ（3ピカ）インデントする必要があります。
+Formatting Instructions For NeurIPS 2020
+David S. Hippocampus∗
+Department of Computer Science
+Cranberry-Lemon University
+Pittsburgh, PA 15213
+hippo@cs.cranberry-lemon.edu
+Abstract
+The abstract paragraph should be indented 1/2 inch (3 picas) on both the left- and
+right-hand margins. Use 10 point type, with a vertical spacing (leading) of 11 points.
+The word Abstract must be centered, bold, and in point size 12. Two line spaces
+precede the abstract. The abstract must be limited to one paragraph.
 
-Use 10 point type, with a vertical spacing (leading) of 11 points.
-10ポイントの文字を使用し、縦のスペース（リーディング）を11ポイントに設定してください。
+フォーマット指示（NeurIPS 2020）
 
-The word Abstract must be centered, bold, and in point size 12.
-「抽象」の文字は、中央揃えで太字で、フォントサイズ12で表示する必要があります。
+デイビッドS.ヒッポカンパス∗
+コンピュータサイエンス学科
+クランベリーレモン大学
+ピッツバーグ、PA 15213
+hippo@cs.cranberry-lemon.edu
 
-Two line spaces precede the abstract.
-要約の前には2行スペースがあります。
-
-The abstract must be limited to one paragraph.
-要約は1段落に制限されなければなりません。
+要旨
+要旨の段落は、左右の余白に1/2インチ（3パイカ）の字下げをします。10ポイントの文字サイズを使用し、縦のスペース（行送り）は11ポイントとします。"Abstract"という言葉は中央揃えで、太字で、12ポイントの大きさで表示されます。要旨の前に2行空けます。要旨は1つの段落に制限される必要があります。
 
 1 Submission of papers to NeurIPS 2020
-
-NeurIPS requires electronic submissions.
-1. NeurIPS 2020への論文提出
-
-NeurIPSは電子的な論文提出を必要としています。
-
-The electronic submission site is https://cmt3.research.microsoft.com/NeurIPS2020/
-
+NeurIPS requires electronic submissions. The electronic submission site is
+https://cmt3.research.microsoft.com/NeurIPS2020/
 Please read the instructions below carefully and follow them faithfully.
-電子提出サイトはhttps://cmt3.research.microsoft.com/NeurIPS2020/です。
 
-以下の指示を注意深く読んで、忠実に従ってください。
+1 提出に関する重要な事項
+NeurIPS2020では、電子投稿が必要です。電子投稿サイトは以下の通りです。
+https://cmt3.research.microsoft.com/NeurIPS2020/
+以下の指示を注意深く読み、忠実に従ってください。
 
-1.1 Style Papers to be submitted to NeurIPS 2020 must be prepared according to the instructions presented here.
-1.1 NeurIPS 2020に提出するスタイルペーパーは、ここに示された指示に従って準備する必要があります。
+1.1 Style
+Papers to be submitted to NeurIPS 2020 must be prepared according to the instructions presented
+here. Papers may only be up to eight pages long, including ﬁgures. Additional pages containing only
+a section on the broader impact, acknowledgments and/or cited references are allowed. Papers that
+exceed eight pages of content will not be reviewed, or in any other way considered for presentation at
+the conference.
+The margins in 2020 are the same as those in 2007, which allow for ∼15% more words in the paper
+compared to earlier years.
+Authors are required to use the NeurIPS LATEX style ﬁles obtainable at the NeurIPS website as
+indicated below. Please make sure you use the current ﬁles and not previous versions. Tweaking the
+style ﬁles may be grounds for rejection.
 
-Papers may only be up to eight pages long, including ﬁgures.
-論文は、図を含めて最大8ページまでとする。
+1.1 スタイル
+NeurIPS 2020に提出する論文は、ここに示されている指示に従って準備する必要があります。図を含めて8ページまでの論文しか受け付けられません。広範な影響に関するセクション、謝辞、または引用された参考文献のみを含む追加ページは許可されています。8ページを超える内容の論文は、査読されず、または会議での発表の対象にはなりません。
 
-Additional pages containing only a section on the broader impact, acknowledgments and/or cited
-引用文献のみを含むセクションのみを含む追加ページ。広範な影響に関するセクション、謝辞、または引用されたセクションのみを含みます。
+2020年の余白は2007年と同じであり、従来の年度に比べて約15％多くの単語を含めることができます。
+
+著者は、以下に示すNeurIPSウェブサイトから入手可能なNeurIPS LATEXスタイルファイルを使用する必要があります。以前のバージョンではなく、最新のファイルを使用するようにしてください。スタイルファイルを微調整することは、却下の理由になる可能性があります。
+
+1.2 Retrieval of style ﬁles
+The style ﬁles for NeurIPS and other conference information are available on the World Wide Web at
+http://www.neurips.cc/
+The ﬁle neurips_2020.pdf contains these instructions and illustrates the various formatting re-
+quirements your NeurIPS paper must satisfy.
+The only supported style ﬁle for NeurIPS 2020 is neurips_2020.sty, rewritten for LATEX2ε.
+Previous style ﬁles for LATEX 2.09, Microsoft Word, and RTF are no longer supported!
+∗Use footnote for providing further information about author (webpage, alternative address)—not for
+acknowledging funding agencies.
+34th Conference on Neural Information Processing Systems (NeurIPS 2020), Vancouver, Canada.
+The LATEX style ﬁle contains three optional arguments: final, which creates a camera-ready copy,
+preprint, which creates a preprint for submission to, e.g., arXiv, and nonatbib, which will not
+load the natbib package for you in case of package clash.
+Preprint option If you wish to post a preprint of your work online, e.g., on arXiv, using the
+NeurIPS style, please use the preprint option. This will create a nonanonymized version of your
+work with the text “Preprint. Work in progress.” in the footer. This version may be distributed as
+you see ﬁt. Please do not use the final option, which should only be used for papers accepted to
+NeurIPS.
+At submission time, please omit the final and preprint options. This will anonymize your
+submission and add line numbers to aid review. Please do not refer to these line numbers in your
+paper as they will be removed during generation of camera-ready copies.
+The ﬁle neurips_2020.tex may be used as a “shell” for writing your paper. All you have to do is
+replace the author, title, abstract, and text of the paper with your own.
+The formatting instructions contained in these style ﬁles are summarized in Sections 2, 3, and 4
+below.
+
+1.2　スタイルファイルの取得
+NeurIPSおよびその他の学会情報のスタイルファイルは、以下のウェブサイトで入手できます。
+http://www.neurips.cc/
+ファイルneurips_2020.pdfには、これらの指示が含まれており、NeurIPSの論文に必要なさまざまなフォーマット要件が説明されています。
+NeurIPS 2020でサポートされている唯一のスタイルファイルは、LATEX2ε用に書き直されたneurips_2020.styです。
+以前のLATEX 2.09、Microsoft Word、およびRTF用のスタイルファイルはサポートされていません！
+
+∗ 著者に関する詳細情報（ウェブページ、代替住所）を提供するために脚注を使用してください。資金提供機関に感謝の意を示すためには使用しないでください。
+
+第34回ニューラル情報処理システムカンファレンス（NeurIPS 2020）、カナダ、バンクーバー。
+
+LATEXスタイルファイルには3つのオプションの引数が含まれています。finalはカメラレディコピーを作成し、preprintは、例えばarXivへの投稿用にプレプリントを作成し、nonatbibはパッケージの衝突の場合にnatbibパッケージを読み込まないようにします。
+
+プレプリントオプション　NeurIPSスタイルを使用して作業のプレプリントをオンラインで公開する場合は、プレプリントオプションを使用してください。これにより、フッターに「プレプリント。進行中の作業」というテキストが表示された匿名化されていないバージョンの作業が作成されます。このバージョンは自由に配布できます。NeurIPSに受け入れられた論文にのみ使用されるfinalオプションは使用しないでください。
+
+投稿時には、finalおよびpreprintオプションを省略してください。これにより、投稿が匿名化され、査読を支援するために行番号が追加されます。これらの行番号を論文で参照しないでください。カメラレディコピーの生成時に削除されます。
+
+ファイルneurips_2020.texは、論文を作成するための「シェル」として使用できます。必要なのは、著者、タイトル、要約、および本文をご自身のものに置き換えるだけです。
+
+これらのスタイルファイルに含まれるフォーマット指示は、以下のセクション2、3、および4で要約されています。
+
+2 General formatting instructions
+The text must be conﬁned within a rectangle 5.5 inches (33 picas) wide and 9 inches (54 picas) long.
+The left margin is 1.5 inch (9 picas). Use 10 point type with a vertical spacing (leading) of 11 points.
+Times New Roman is the preferred typeface throughout, and will be selected for you by default.
+Paragraphs are separated by 1/2 line space (5.5 points), with no indentation.
+The paper title should be 17 point, initial caps/lower case, bold, centered between two horizontal
+rules. The top rule should be 4 points thick and the bottom rule should be 1 point thick. Allow 1/4 inch
+space above and below the title to rules. All pages should start at 1 inch (6 picas) from the top of the
+page.
+For the ﬁnal version, authors’ names are set in boldface, and each name is centered above the
+corresponding address. The lead author’s name is to be listed ﬁrst (left-most), and the co-authors’
+names (if different address) are set to follow. If there is only one co-author, list both author and
+co-author side by side.
+PleasepayspecialattentiontotheinstructionsinSection4regardingﬁgures, tables, acknowledgments,
+and references.
+
+2. 一般的な書式指示
+テキストは、縦5.5インチ（33パイカ）横9インチ（54パイカ）の長方形内に収められる必要があります。
+左の余白は1.5インチ（9パイカ）です。フォントは10ポイントで、行間は11ポイントです。
+Times New Romanが優先される書体で、デフォルトで選択されます。
+段落は1/2行のスペース（5.5ポイント）で区切られ、インデントはありません。
+論文のタイトルは、水平線の間に合わせて、17ポイントの大文字/小文字/太字の中央揃えです。
+上の線は4ポイントの太さで、下の線は1ポイントの太さです。タイトルと線の間には1/4インチのスペースを空けてください。
+すべてのページは、ページの上部から1インチ（6パイカ）の位置から開始する必要があります。
+最終バージョンでは、著者の名前は太字で設定され、各名前は対応する住所の上に中央揃えで表示されます。リード著者の名前は最初に（左端に）リストされ、共著者の名前（住所が異なる場合）は続きます。共著者が1人の場合は、著者と共著者を並べて表示してください。
+図、表、謝辞、参考文献に関する指示については、セクション4の指示に特に注意してください。
+
+3 Headings: ﬁrst level
+All headings should be lower case (except for ﬁrst word and proper nouns), ﬂush left, and bold.
+First-level headings should be in 12-point type.
+
+3つの見出し：第1レベル
+全ての見出しは、（固有名詞や先頭の単語を除いて）すべて小文字で、左揃えで、太字です。
+第1レベルの見出しは、12ポイントの文字で表示されます。
+
+3.1 Headings: second level
+Second-level headings should be in 10-point type.
+
+3.1 ヘッディング: 二次レベル
+二次レベルのヘッディングは10ポイントであるべきです。
+
+3.1.1 Headings: third level
+Third-level headings should be in 10-point type.
+Paragraphs There is also a \paragraph command available, which sets the heading in bold, ﬂush
+left, and inline with the text, with the heading followed by 1em of space.
+
+3.1.1 Headings: third level
+3.1.1 ヘッダー：三番目のレベル
+Third-level headings should be in 10-point type.
+三番目のレベルの見出しは10ポイントのタイプであるべきです。
+Paragraphs There is also a \paragraph command available, which sets the heading in bold, ﬂush left, and inline with the text, with the heading followed by 1em of space.
+段落には、\paragraph コマンドも利用できます。このコマンドは、見出しを太字で左寄せにし、テキストと一列に配置します。見出しの後には1emのスペースが続きます。
+
+4 Citations, ﬁgures, tables, references
+These instructions apply to everyone.
+2
+Figure 1: Sample ﬁgure caption.
+
+4 引用、図、表、参考文献
+これらの指示は全員に適用されます。
+2
+図1：サンプルの図のキャプション。
+
+4.1 Citations within the text
+The natbib package will be loaded for you by default. Citations may be author/year or numeric, as
+long as you maintain internal consistency. As to the format of the references themselves, any style is
+acceptable as long as it is used consistently.
+The documentation for natbib may be found at
+http://mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf
+Of note is the command \citet, which produces citations appropriate for use in inline text. For
+example,
+\citet{hasselmo} investigated\dots
+produces
+Hasselmo, et al. (1995) investigated...
+If you wish to load the natbib package with options, you may add the following before loading the
+neurips_2020 package:
+\PassOptionsToPackage{options}{natbib}
+If natbib clashes with another package you load, you can add the optional argument nonatbib
+when loading the style ﬁle:
+\usepackage[nonatbib]{neurips_2020}
+As submission is double blind, refer to your own published work in the third person. That is, use “In
+the previous work of Jones et al. [4],” not “In our previous work [4].” If you cite your other papers
+that are not widely available (e.g., a journal paper under review), use anonymous author names in the
+citation, e.g., an author of the form “A. Anonymous.”
+
+4.1 テキスト内の引用
+デフォルトでnatbibパッケージが読み込まれます。内部の一貫性を保つ限り、引用は著者/年または数字であっても構いません。参考文献の形式については、一貫して使用される限り、どのようなスタイルでも受け入れられます。
+natbibのドキュメンテーションは、次の場所で見つけることができます。
+http://mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf
+注目すべきは、\citetコマンドです。これはインラインテキストで使用するための引用を生成します。例えば、
+\citet{hasselmo} investigated...
+は
+Hasselmo, et al. (1995) investigated...
+を生成します。
+オプションを指定してnatbibパッケージを読み込む場合は、neurips_2020パッケージを読み込む前に以下を追加することができます：
+\PassOptionsToPackage{options}{natbib}
+もしnatbibが他の読み込んだパッケージと衝突する場合は、スタイルファイルを読み込む際にoptional argument nonatbibを追加することができます：
+\usepackage[nonatbib]{neurips_2020}
+投稿は二重盲目のため、自身の公開済みの研究を三人称で参照してください。つまり、"Jonesらの先行研究[4]で"と記述するのではなく、"私たちの先行研究[4]で"としないでください。利用できない他の論文（例：査読中のジャーナル論文）を引用する場合は、匿名の著者名を使用してください。例えば、"A. Anonymous"という形式の著者です。
+
+4.2 Footnotes
+Footnotes should be used sparingly. If you do require a footnote, indicate footnotes with a number2
+in the text. Place the footnotes at the bottom of the page on which they appear. Precede the footnote
+with a horizontal rule of 2 inches (12 picas).
+Note that footnotes are properly typeset after punctuation marks.3
+
+4.2 脚注
+脚注は必要最小限にとどめるべきです。脚注が必要な場合は、テキスト内で番号（2）で示してください。脚注は、それが表示されるページの一番下に配置してください。脚注の前には、2インチ（12ピカ）の水平な区切りを置いてください。
+なお、脚注は句読点の後ろに適切に組版されることに注意してください（3）。
+
+4.3 Figures
+Allartworkmustbeneat, clean, andlegible. Linesshouldbedarkenoughforpurposesofreproduction.
+The ﬁgure number and caption always appear after the ﬁgure. Place one line space before the ﬁgure
+
+4.3 図
+すべての作業は整然とし、クリーンで読みやすくする必要があります。繁殖の目的に十分な濃さの線を使用してください。
+図の番号とキャプションは常に図の後に表示されます。図の前に1行のスペースを入れてください。
+
+2Sample of the ﬁrst footnote.
+
+2つ目の最初の脚注の例。
+
+3As in this example.
+3
+Table 1: Sample table title
+Part
+Size (µm)
+Name
+Description
+∼100
+Dendrite
+Input terminal
+Output terminal ∼10
+Axon
+up to 106
+Soma
+Cell body
+caption and one line space after the ﬁgure. The ﬁgure caption should be lower case (except for ﬁrst
+word and proper nouns); ﬁgures are numbered consecutively.
+You may use color ﬁgures. However, it is best for the ﬁgure captions and the paper body to be legible
+if the paper is printed in either black/white or in color.
+
+3As in this example.
+3
+表1：サンプルの表のタイトル
+部分
+サイズ（µm）
+名前
+説明
+∼100
+樹状突起
+入力端子
+出力端子 ∼10
+軸索
+最大106
+細胞体
+キャプションと図の後に1行のスペースを空けます。図のキャプションは小文字で書かれ、（最初の単語と固有名詞を除く）順番に番号がつけられます。
+カラーフィギュアを使用することもできますが、論文が黒／白またはカラーで印刷される場合に図のキャプションと本文が読みやすい場合が最適です。
+
+4.4 Tables
+All tables must be centered, neat, clean and legible. The table number and title always appear before
+the table. See Table 1.
+Place one line space before the table title, one line space after the table title, and one line space after
+the table. The table title must be lower case (except for ﬁrst word and proper nouns); tables are
+numbered consecutively.
+Note that publication-quality tables do not contain vertical rules. We strongly suggest the use of the
+booktabs package, which allows for typesetting high-quality, professional tables:
+https://www.ctan.org/pkg/booktabs
+This package was used to typeset Table 1.
+
+4.4 タブル
+全てのテーブルは中央に配置し、整然とし、清潔で読みやすくする必要があります。テーブル番号とタイトルは常にテーブルの前に表示されます。テーブル1を参照してください。
+テーブルのタイトルの前に1行分の空白を入れ、タイトルの後に1行分の空白を入れ、テーブルの後に1行分の空白を入れます。テーブルのタイトルは小文字で表記されます（ただし、最初の単語と固有名詞を除く）。テーブルは連続的に番号付けされます。
+出版品質のテーブルには垂直線は含まれていません。高品質でプロフェッショナルなテーブルの組版を可能にするbooktabsパッケージの使用を強くお勧めします。以下のリンクからダウンロードできます：
+https://www.ctan.org/pkg/booktabs
+このパッケージはテーブル1の組版に使用されました。
+
+5 Final instructions
+Do not change any aspects of the formatting parameters in the style ﬁles. In particular, do not modify
+the width or length of the rectangle the text should ﬁt into, and do not change font sizes (except
+perhaps in the References section; see below). Please note that pages should be numbered.
+
+5 最終指示
+スタイルファイルの形式パラメーターのどの側面も変更しないでください。特に、テキストが収まるべき四角形の幅や長さを変更しないでください。フォントサイズも変更しないでください（参考文献のセクションではおそらく変更が必要です。以下参照）。ページには番号が付けられる必要があることに注意してください。
+
+6 Preparing PDF ﬁles
+Please prepare submission ﬁles with paper size “US Letter,” and not, for example, “A4.”
+Fonts were the main cause of problems in the past years. Your PDF ﬁle must only contain Type 1 or
+Embedded TrueType fonts. Here are a few instructions to achieve this.
+• You should directly generate PDF ﬁles using pdflatex.
+• You can check which fonts a PDF ﬁles uses.
+In Acrobat Reader, select the menu
+Files>Document Properties>Fonts and select Show All Fonts. You can also use the program
+pdffonts which comes with xpdf and is available out-of-the-box on most Linux machines.
+• The IEEE has recommendations for generating PDF ﬁles whose fonts are also ac-
+ceptable for NeurIPS. Please see http://www.emfield.org/icuwb2010/downloads/
+IEEE-PDF-SpecV32.pdf
+• xfig "patterned" shapes are implemented with bitmap fonts. Use "solid" shapes instead.
+• The \bbold package almost always uses bitmap fonts. You should use the equivalent AMS
+Fonts:
+\usepackage{amsfonts}
+followed by, e.g., \mathbb{R}, \mathbb{N}, or \mathbb{C} for R, N or C. You can also
+use the following workaround for reals, natural and complex:
+4
+\newcommand{\RR}{I\!\!R} %real numbers
+\newcommand{\Nat}{I\!\!N} %natural numbers
+\newcommand{\CC}{I\!\!\!\!C} %complex numbers
+Note that amsfonts is automatically loaded by the amssymb package.
+If your ﬁle contains type 3 fonts or non embedded TrueType fonts, we will ask you to ﬁx it.
+
+6 PDFファイルの準備
+提出用のファイルは、「A4」ではなく、「US Letter」という用紙サイズで準備してください。
+過去の数年間、フォントが問題の主な原因でした。PDFファイルにはType 1または埋め込みTrueTypeフォントのみを含める必要があります。これを実現するためのいくつかの手順を以下に示します。
+
+• pdflatexを使用して直接PDFファイルを生成する必要があります。
+• PDFファイルがどのフォントを使用しているかを確認することができます。
+Acrobat Readerで、メニューの[ファイル] > [ドキュメントのプロパティ] > [フォント]を選択し、「すべてのフォントを表示」を選択します。また、xpdfに付属しており、ほとんどのLinuxマシンで利用可能なプログラムであるpdffontsも使用することができます。
+• IEEEでは、フォントもNeurIPSで受け入れ可能なPDFファイルを生成するための推奨事項があります。詳細はhttp://www.emfield.org/icuwb2010/downloads/IEEE-PDF-SpecV32.pdfをご覧ください。
+• xfigの「パターン化された」形状はビットマップフォントで実装されています。代わりに「実体化した」形状を使用してください。
+• \bboldパッケージはほとんど常にビットマップフォントを使用します。代わりに等価のAMSフォントを使用する必要があります:
+\usepackage{amsfonts}
+その後、たとえば\mathbb{R}、\mathbb{N}、または\mathbb{C}を使用してR、N、またはCを表します。また、以下の回避策を使用して実数、自然数、および複素数を表すこともできます:
+\newcommand{\RR}{I\!\!R} %実数
+\newcommand{\Nat}{I\!\!N} %自然数
+\newcommand{\CC}{I\!\!\!\!C} %複素数
+amsfontsはamssymbパッケージによって自動的に読み込まれることに注意してください。
+もしファイルにタイプ3フォントや埋め込まれていないTrueTypeフォントが含まれている場合、修正を依頼します。
+
+6.1 Margins in LATEX
+Most of the margin problems come from ﬁgures positioned by hand using \special or other
+commands. We suggest using the command \includegraphics from the graphicx package.
+Always specify the ﬁgure width as a multiple of the line width as in the example below:
+\usepackage[pdftex]{graphicx} ...
+\includegraphics[width=0.8\linewidth]{myfile.pdf}
+See Section 4.4 in the graphics bundle documentation (http://mirrors.ctan.org/macros/
+latex/required/graphics/grfguide.pdf)
+A number of width problems arise when LATEX cannot properly hyphenate a line. Please give LaTeX
+hyphenation hints using the \- command when necessary.
+Broader Impact
+Authors are required to include a statement of the broader impact of their work, including its ethical
+aspects and future societal consequences. Authors should discuss both positive and negative outcomes,
+if any. For instance, authors should discuss a) who may beneﬁt from this research, b) who may be
+put at disadvantage from this research, c) what are the consequences of failure of the system, and d)
+whether the task/method leverages biases in the data. If authors believe this is not applicable to them,
+authors can simply state this.
+Use unnumbered ﬁrst level headings for this section, which should go at the end of the paper. Note
+that this section does not count towards the eight pages of content that are allowed.
+Acknowledgments and Disclosure of Funding
+Use unnumbered ﬁrst level headings for the acknowledgments. All acknowledgments go at the
+end of the paper before the list of references. Moreover, you are required to declare funding
+(ﬁnancial activities supporting the submitted work) and competing interests (related ﬁnancial activities
+outside the submitted work). More information about this disclosure can be found at: https:
+//neurips.cc/Conferences/2020/PaperInformation/FundingDisclosure.
+Do not include this section in the anonymized submission, only in the ﬁnal paper. You can use
+the ack environment provided in the style ﬁle to autmoatically hide this section in the anonymized
+submission.
+References
+References follow the acknowledgments. Use unnumbered ﬁrst-level heading for the references. Any
+choice of citation style is acceptable as long as you are consistent. It is permissible to reduce the
+font size to small (9 point) when listing the references. Note that the Reference section does not
+count towards the eight pages of content that are allowed.
+[1] Alexander, J.A. & Mozer, M.C. (1995) Template-based algorithms for connectionist rule extraction. In
+G. Tesauro, D.S. Touretzky and T.K. Leen (eds.), Advances in Neural Information Processing Systems 7, pp.
+609–616. Cambridge, MA: MIT Press.
+[2] Bower, J.M. & Beeman, D. (1995) The Book of GENESIS: Exploring Realistic Neural Models with the
+GEneral NEural SImulation System. New York: TELOS/Springer–Verlag.
+5
+[3] Hasselmo, M.E., Schnell, E. & Barkai, E. (1995) Dynamics of learning and recall at excitatory recurrent
+synapses and cholinergic modulation in rat hippocampal region CA3. Journal of Neuroscience 15(7):5249-5262.
+6
+
+
+6.1 LATEXのマージン
+マージンの問題の大部分は、\specialや他のコマンドを使用して手動で配置された図に起因しています。graphicxパッケージの\includegraphicsコマンドの使用をお勧めします。以下の例のように、常に図の幅を行幅の倍数として指定してください。
+\usepackage[pdftex]{graphicx} ...
+\includegraphics[width=0.8\linewidth]{myfile.pdf}
+グラフィックスバンドルのドキュメントのセクション4.4を参照してください（http://mirrors.ctan.org/macros/latex/required/graphics/grfguide.pdf）。
+LATEXが行を適切にハイフンできない場合、幅の問題が発生することがあります。必要に応じて、\~コマンドを使用してLaTeXのハイフネーションのヒントを指定してください。
+広範な影響
+著者には、その研究の広範な影響についての声明を含めるように求められています。倫理的な側面や将来の社会的な結果を含め、著者は肯定的な結果と否定的な結果の両方について議論する必要があります。例えば、著者はa)この研究から利益を得る可能性がある人々、b)この研究から不利益を被る可能性がある人々、c)システムの障害の結果は何か、d)タスク/手法がデータのバイアスを利用しているかどうかについて議論するべきです。著者がこれが自分には適用されないと考える場合、著者は単にそれを述べることができます。
+このセクションには、論文の末尾に配置する非番号付きの1次レベルの見出しを使用します。ただし、このセクションは許可される8ページのコンテンツには含まれません。
+謝辞と資金の開示
+謝辞には非番号付きの1次レベルの見出しを使用します。すべての謝辞は、参考文献リストの前に論文の末尾に配置されます。さらに、提出された仕事をサポートするための金融活動（資金）と関連する金融活動（競合利益）を宣言することが義務付けられています。この開示に関する詳細情報は、次のURLで確認できます：https://neurips.cc/Conferences/2020/PaperInformation/FundingDisclosure。
+匿名の提出では、このセクションを含めないでください。最終的な論文にのみ使用してください。このセクションを匿名の提出で非表示にするために、スタイルファイルで提供されるack環境を使用できます。
+参考文献
+参考文献は謝辞に続きます。参考文献には非番号付きの1次レベルの見出しを使用します。一貫している限り、任意の引用スタイルの選択は許可されます。参考文献一覧をリストアップする際にフォントサイズを小さく（9ポイント）することは許可されます。ただし、参考文献セクションは許可される8ページのコンテンツには含まれません。
+[1] Alexander, J.A. & Mozer, M.C. (1995) Template-based algorithms for connectionist rule extraction. In G. Tesauro, D.S. Touretzky and T.K. Leen (eds.), Advances in Neural Information Processing Systems 7, pp. 609–616. Cambridge, MA: MIT Press.
+[2] Bower, J.M. & Beeman, D. (1995) The Book of GENESIS: Exploring Realistic Neural Models with the GEn
 
