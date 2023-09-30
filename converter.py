@@ -50,7 +50,16 @@ class ConvertPDF2text:
     PDFは2段組みの場合も含める
     """
 
-    def __init__(self, argv: list):
+    def __init__(
+        self,
+        input_path=r"sample.pdf",
+        output_path="result/extraction.txt",
+        border=0,  # 段組みの切れ目のx座標 0の時ページの真ん中に設定
+        footer=60,  # フッターのy座標。ページの最下部が0。これより下の位置の文字は抽出しない
+        header=1000,  # ヘッダーのy座標。 これより上の位置の文字は抽出しない
+        start_page=1,  # 開始ページ1スタート
+        last_page=0,  # 終了ページ1スタート
+    ):
         """
         コンストラクタ
 
@@ -66,77 +75,13 @@ class ConvertPDF2text:
                     開始ページ(1スタート)
                     終了ページ(1スタート)
         """
-        self.input_path = r"sample.pdf"
-        self.output_path = "result/extraction.txt"
-        self.border = 0  # 段組みの切れ目のx座標 0の時ページの真ん中に設定
-        self.footer = 60  # フッターのy座標。ページの最下部が0。これより下の位置の文字は抽出しない
-        self.header = 1000  # ヘッダーのy座標。 これより上の位置の文字は抽出しない
-        self.start_page = 1  # 開始ページ1スタート
-        self.last_page = 0  # 終了ページ1スタート
-
-        if not argv:
-            return
-
-        # コマンドライン引数の解析
-        parser = argparse.ArgumentParser()  # インスタンス作成
-        parser.add_argument("input_path", type=str, help="入力ファイル名")  # 引数定義
-        parser.add_argument(
-            "output_path",
-            nargs="?",
-            default=self.output_path,
-            type=str,
-            help="出力ファイル名(default:extraction.txt)",
-        )  # 引数定義
-        parser.add_argument(
-            "-b",
-            "--border",
-            type=int,
-            metavar="n",
-            default=1,
-            help="段組みの切れ目  0の場合、用紙幅の半分(default:%(default)s)",
-        )  # 引数定義
-        parser.add_argument(
-            "-f",
-            "--footer",
-            type=int,
-            metavar="n",
-            default=30,
-            help="フッター位置(default:%(default)s)",
-        )  # 引数定義
-        parser.add_argument(
-            "-t",
-            "--top",
-            type=int,
-            metavar="n",
-            default=1000,
-            help="ヘッダー位置(default:%(default)s)",
-        )  # 引数定義
-        parser.add_argument(
-            "-s",
-            "--s_page",
-            type=int,
-            metavar="n",
-            default=1,
-            help="開始ページ(default:%(default)s)",
-        )  # 引数定義
-        parser.add_argument(
-            "-e",
-            "--e_page",
-            type=int,
-            metavar="n",
-            default=0,
-            help="終了ページ(0:最終)(default:%(default)s)",
-        )  # 引数定義
-
-        args = parser.parse_args(argv)  # 引数の解析
-        print(args)  # 引数の参照
-        self.input_path = args.input_path
-        self.start_page = args.s_page
-        self.last_page = args.e_page
-        self.output_path = args.output_path
-        self.border = args.border
-        self.footer = args.footer
-        self.header = args.top
+        self.input_path = input_path
+        self.start_page = start_page
+        self.last_page = last_page
+        self.output_path = output_path
+        self.border = border
+        self.footer = footer
+        self.header = header
         self.sheet_name = os.path.splitext(os.path.basename(self.output_path))[0]
 
     def flatten(self, l):

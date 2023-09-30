@@ -30,22 +30,9 @@ class Formatter:
 
 @dataclass
 class Formatter2:
-    def __init__(self, argv: list):
-        self.chapter_pattern = "^\d\.(\d\.)*\s?[A-z]+"
-
-        # コマンドライン引数の解析
-        parser = argparse.ArgumentParser()  # インスタンス作成
-        parser.add_argument(
-            "chapter_pattern",
-            type=str,
-            default=self.chapter_pattern,
-            help="chapterの番号フォーマット",
-        )
-
-        args = parser.parse_args(argv)
-        print(args)
-
-        self.chapter_pattern = args.chapter_pattern
+    def __init__(self, chapter_pattern="^\d\.(\d\.)*\s?[A-z]+"):
+        self.chapter_pattern = chapter_pattern
+        print("chapter_pattern: {}".format(self.chapter_pattern))
 
     def format(self, text: str):
         # 改行で文字列分割
